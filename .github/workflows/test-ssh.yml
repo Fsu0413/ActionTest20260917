@@ -10,4 +10,5 @@ jobs:
     steps:
       - name: ssh
         uses: sa3lej/action-tmtv@v1
-        timeout-minutes: 300
+        with:
+          - timeout-minutes: 300
