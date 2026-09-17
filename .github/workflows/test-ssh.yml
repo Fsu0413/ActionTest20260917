@@ -1,0 +1,13 @@
+name: test-ssh
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ssh:
+    name: ssh
+    runs-on: ubuntu-26.04
+    steps:
+      - name: ssh
+        uses: sa3lej/action-tmtv@v1
+        timeout-minutes: 300
