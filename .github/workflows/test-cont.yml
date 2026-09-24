@@ -1,0 +1,30 @@
+name: test-cont
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test1:
+    name: "test1 on ${{ matrix.dist.name }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        dist:
+          - name: debiantrixie
+            image: 'debian:trixie'
+          - name: fedora44
+            image: 'fedora:44'
+          - name: alpine324
+            image: 'alpine:3.24'
+          - name: ubunturesolute
+            image: 'ubuntu:resolute'
+          - name: ubuntustonking
+            image: 'ubuntu:stonking'
+          - name: rocky10
+            image: 'rockylinux/rockylinux:10'
+
+    steps:
+      - name: 1
+        run: |
+          echo "Hello from $(uname -a)"
+          cat /etc/os-release
