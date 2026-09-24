@@ -23,6 +23,9 @@ jobs:
           - name: rocky10
             image: 'rockylinux/rockylinux:10'
 
+    runs-on: ubuntu-latest
+    container:
+      image: ${{ matrix.dist.image }}
     steps:
       - name: 1
         run: |
