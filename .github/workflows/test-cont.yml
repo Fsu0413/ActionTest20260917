@@ -12,10 +12,18 @@ jobs:
         dist:
           - name: debiantrixie
             image: 'debian:trixie'
+          - name: debianforky
+            image: 'debian:forky'
           - name: fedora44
             image: 'fedora:44'
+          - name: fedora45
+            image: 'fedora:45'
+          - name: fedorarawhide
+            image: 'fedora:rawhide'
           - name: alpine324
             image: 'alpine:3.24'
+          - name: alpineedge
+            image: 'alpine:edge'
           - name: ubunturesolute
             image: 'ubuntu:resolute'
           - name: ubuntustonking
