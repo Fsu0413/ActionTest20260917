@@ -10,26 +10,38 @@ jobs:
       fail-fast: false
       matrix:
         dist:
-          - name: debiantrixie
-            image: 'debian:trixie'
-          - name: debianforky
-            image: 'debian:forky'
-          - name: fedora44
-            image: 'fedora:44'
-          - name: fedora45
-            image: 'fedora:45'
-          - name: fedorarawhide
-            image: 'fedora:rawhide'
-          - name: alpine324
-            image: 'alpine:3.24'
-          - name: alpineedge
-            image: 'alpine:edge'
-          - name: ubunturesolute
-            image: 'ubuntu:resolute'
-          - name: ubuntustonking
-            image: 'ubuntu:stonking'
-          - name: rocky10
-            image: 'rockylinux/rockylinux:10'
+          #- name: debiantrixie
+          #  image: 'debian:trixie'
+          #- name: debianforky
+          #  image: 'debian:forky'
+          #- name: fedora43
+          #  image: 'fedora:43'
+          #- name: fedora44
+          #  image: 'fedora:44'
+          #- name: fedora45
+          #  image: 'fedora:45'
+          #- name: fedorarawhide
+          #  image: 'fedora:rawhide'
+          #- name: alpine321
+          #  image: 'alpine:3.21'
+          #- name: alpine322
+          #  image: 'alpine:3.22'
+          #- name: alpine323
+          #  image: 'alpine:3.23'
+          #- name: alpine324
+          #  image: 'alpine:3.24'
+          #- name: alpineedge
+          #  image: 'alpine:edge'
+          #- name: ubunturesolute
+          #  image: 'ubuntu:resolute'
+          #- name: ubuntustonking
+          #  image: 'ubuntu:stonking'
+          #- name: rocky10
+          #  image: 'rockylinux/rockylinux:10'
+          - name: alma10
+            image: 'almalinux:10'
+          - name: manjaro
+            image: 'manjarolinux/base:latest'
 
     runs-on: ubuntu-latest
     container:
