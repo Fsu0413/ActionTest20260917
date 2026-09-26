@@ -10,9 +10,9 @@ jobs:
     steps:
       - name: 1
         run: |
-          if ! [ "${{ github.secrets.TEST_SECRET_1 }}" = "" ]; then
+          if ! [ "${{ secrets.TEST_SECRET_1 }}" = "" ]; then
             echo "Using Test Secret 1"
-          elif ! [ "${{ github.secrets.TEST_SECRET_2 }}" = "" ]; then
+          elif ! [ "${{ secrets.TEST_SECRET_2 }}" = "" ]; then
             echo "Using Test Secret 2"
           else
             echo "No Test Secret injected"
