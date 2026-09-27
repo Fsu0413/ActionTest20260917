@@ -10,3 +10,4 @@ jobs:
       - uses: jurplel/install-qt-action@v4
         with:
           version: 6.11.3
+          modules: 'qtwebsockets'
