@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: jurplel/install-qt-action@v4
         with:
-          - version: 6.11.3
+          version: 6.11.3
