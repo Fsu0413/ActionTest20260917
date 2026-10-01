@@ -11,3 +11,11 @@ jobs:
         with:
           version: '6.12.*'
           modules: 'qtwebsockets'
+
+  test2:
+    runs-on: xcode-27
+    steps:
+      - uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.12.*'
+          modules: 'qtwebsockets'
